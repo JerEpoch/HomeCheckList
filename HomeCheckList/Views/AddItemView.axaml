@@ -1,0 +1,53 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HomeCheckList.Views.AddItemView">
+
+	<Grid HorizontalAlignment = "Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height = "auto" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height = "auto" />
+		</Grid.RowDefinitions >
+		
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		
+			<TextBlock Grid.Row="0" FontSize="30" Margin="0 0 0 5" Text="Add New Item" />
+
+		<Grid Grid.Row="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height = "Auto" />
+				<RowDefinition Height= "Auto" />
+			</Grid.RowDefinitions >
+			<TextBox Text="{Binding InputName}" ToolTip.Tip="Enter the item name." Watermark="Item" Grid.Row= "0" Margin= "0 5 0 0"  />
+			
+				<TextBox AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Row= "1"  Margin= "0 5 0 0" TextWrapping="Wrap" Height="200" MaxWidth="200" MaxHeight="200" MaxLength="300"
+						 Text="{Binding InputNote}" ToolTip.Tip="You can enter a description or a short note." Watermark="Item description or note." />
+
+			
+		</Grid >
+
+
+
+		<StackPanel Grid.Row= "2" Grid.Column="1" Orientation= "Horizontal" HorizontalAlignment="Right" >
+			<Button Margin= "5 0 0 0" Content= "Add Item" Command= "{Binding AddItem}" />
+		</StackPanel >
+
+		<Grid Grid.Column="1" Grid.Row="1" Margin="5 0 0 0">
+			<Border Classes="Card">
+				<StackPanel ToolTip.Tip="If you would like a reminder of when to check the item next.">
+					<TextBlock Grid.Row="2" Margin="0 0 0 5" FontSize="20" Text="Next Service Date" />
+					<CheckBox IsChecked="{Binding IncludeReminder}" Content="Include a reminder date?" Margin="0 5 0 5" />
+					<CalendarDatePicker IsVisible="{Binding IncludeReminder}" SelectedDate="{Binding DueDates}"></CalendarDatePicker>
+					
+				</StackPanel>
+
+			</Border>
+		</Grid>
+	</Grid>
+</UserControl>

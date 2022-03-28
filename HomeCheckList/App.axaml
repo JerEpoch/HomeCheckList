@@ -1,0 +1,20 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:HomeCheckList"
+             x:Class="HomeCheckList.App">
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+
+    <Application.Styles>
+		<StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Default.xaml"/>
+		<!--<StyleInclude Source="avares://Citrus.Avalonia/Citrus.xaml"/>-->
+		<!-- To use other themes:
+         1. Comment out *all* of the <StyleInclude /> lines.
+         2. Uncomment *one* of the <StyleInclude /> lines below. -->
+		 <StyleInclude Source="avares://Citrus.Avalonia/Sea.xaml"/> 
+		<!-- <StyleInclude Source="avares://Citrus.Avalonia/Rust.xaml"/> -->
+		<!-- <StyleInclude Source="avares://Citrus.Avalonia/Candy.xaml"/> -->
+		<!--<StyleInclude Source="avares://Citrus.Avalonia/Magma.xaml"/> -->
+    </Application.Styles>
+</Application>

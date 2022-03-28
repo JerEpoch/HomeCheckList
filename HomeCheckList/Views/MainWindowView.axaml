@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:rxui="http://reactiveui.net"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HomeCheckList.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="500"
+		xmlns:local="using:HomeCheckList.Views"
+		Width="1050"
+		Height="600"
+		MinWidth="1050"
+		MinHeight="600"
+        x:Class="HomeCheckList.Views.MainWindowView"
+        Title="Home CheckList"
+		>
+
+    <Design.DataContext>
+		<vm:MainWindowViewModel/> 
+    </Design.DataContext>
+	<Border Margin="5">
+		<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="2*" />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+		
+		<DockPanel Grid.Column="0">
+			<StackPanel Orientation="Vertical" VerticalAlignment="Top" DockPanel.Dock="Left">
+				<Panel Margin="5,0,0,0">
+					<Button Content="Show Theme" HorizontalAlignment="Left" Command="{Binding OpenThemeTest}"  />
+					
+				</Panel>
+				<Panel>
+					<TextBlock Text="Your rooms" Margin="0 0 0 5" />
+				</Panel>
+				<Panel>
+					<ComboBox x:Name="RoomsList"  SelectedItem="{Binding SelectedRoom}"  Items="{Binding Rooms}" SelectedIndex="0"  PlaceholderText="Select a room" ToolTip.Tip="Select a room to add an item to it.">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Name}" />
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</Panel>
+				<Button HorizontalAlignment="Center"  Command="{Binding GetRoomItems}" CommandParameter="{Binding ElementName=RoomList, Path=SelectedItem}" Content="Show room items" IsEnabled="{Binding CanAddRoomItem}" />
+				
+				<Panel>
+					<Button Content="Add An Item" Command="{Binding AddItem}" IsEnabled="{Binding CanAddRoomItem}" />
+				</Panel>
+				
+				<Panel>
+					<Button Content="Add New Room" Command="{Binding AddRoom}" />
+
+				</Panel>
+			</StackPanel>
+			
+			<ContentControl Grid.Column="1" Margin="20" Content="{Binding CurrentViewModel}" />
+	
+				 <!--  -->
+		</DockPanel>
+
+
+			
+			
+	</Grid>
+		
+	</Border>
+
+
+
+</Window>

@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HomeCheckList.Views.AddRoomView">
+	<Grid HorizontalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height = "auto" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="auto" />
+		</Grid.RowDefinitions >
+		
+		<TextBlock Grid.Row="0" FontSize="30" Text="Add New Room" />
+		<Grid Grid.Row="1">
+			<TextBox Text="{Binding InputRoomName}" Watermark="Enter room name" />
+		</Grid>
+
+		<StackPanel Grid.Row="2" Orientation= "Horizontal">
+			<Button Command="{Binding AddRoom}" Content="Add Room" />
+			
+		</StackPanel>
+	</Grid>
+</UserControl>
