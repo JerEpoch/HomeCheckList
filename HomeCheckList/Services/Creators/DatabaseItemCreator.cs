@@ -32,5 +32,20 @@ namespace HomeCheckList.Services.Creators
             context.RoomsItems.Add(_roomItem);
             await context.SaveChangesAsync();
         }
+
+        public async Task UpdateRoomItem(RoomItems roomItem)
+        {
+            using CheckListContext context = _contextFactory.CreateDbContext();
+
+            context.Update(roomItem);
+            await context.SaveChangesAsync();
+        }
+
+        public async Task DeleteRoomItem(RoomItems roomItem)
+        {
+            using CheckListContext context = _contextFactory.CreateDbContext();
+            context.Remove(roomItem);
+            context.SaveChanges();
+        }
     }
 }

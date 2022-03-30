@@ -40,5 +40,24 @@ namespace HomeCheckList.Services
                 return roomItems;
             }
         }
+
+        //public async Task UpdateRoomItem(RoomItems item)
+        //{
+        //    using (CheckListContext context = _contextFactory.CreateDbContext())
+        //    {
+        //        context.Update(item);
+        //        context.SaveChanges();
+        //    }
+        //}
+
+        public async Task<RoomItems> GetRoomItemById(int itemId)
+        {
+            using (CheckListContext context = _contextFactory.CreateDbContext())
+            {
+                RoomItems roomItem = await context.RoomsItems.FirstOrDefaultAsync(item => item.Id == itemId);
+
+                return roomItem;
+            }
+        }
     }
 }

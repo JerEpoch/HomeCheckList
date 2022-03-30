@@ -11,6 +11,7 @@ namespace HomeCheckList.Commands
     public class NavigateCommand<TViewModel> : CommandBase
         where TViewModel : ViewModelBase
     {
+
         private readonly NavigationStore _navigateStore;
         private readonly Func<TViewModel> _createViewModel;
 

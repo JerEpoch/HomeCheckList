@@ -62,6 +62,7 @@ namespace HomeCheckList.ViewModels
 
         public ICommand LoadRoomItems { get;  }
         public ICommand GoEditItem { get; }
+        public ICommand DeleteRoomItem { get; }
 
         bool CanGoEditItem(object parameter)
         {
@@ -77,8 +78,8 @@ namespace HomeCheckList.ViewModels
             //_roomItems = new ObservableCollection<RoomItems>();
             _itemsViewModel = new ObservableCollection<ItemViewModel>();
 
-            GoEditItem = new NavigateCommand<EditRoomItemViewModel>(_navigationStore, () => new EditRoomItemViewModel(_dbHelper, _navigationStore, _selectedItem));
-
+            GoEditItem = new NavigateCommand<EditRoomItemViewModel>(_navigationStore, () => new EditRoomItemViewModel(_dbHelper, _navigationStore, _selectedItem, mainWindowViewModel));
+            DeleteRoomItem = new DeleteRoomItemCommand(dbhelper, this, _navigationStore, mainWindowViewModel);
            
             LoadRoomItems = new LoadRoomItemsCommand(this, _dbHelper, _mainWindowViewModel.SelectedRoom.Id);
             this.LoadRoomItems.Execute(null);

@@ -10,5 +10,7 @@ namespace HomeCheckList.Services.Creators
     public interface IRoomItemCreator
     {
         Task CreateRoomItem(RoomItems roomItem);
+        Task UpdateRoomItem(RoomItems roomItem);
+        Task DeleteRoomItem(RoomItems roomItem);
     }
 }

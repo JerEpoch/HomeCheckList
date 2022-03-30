@@ -34,16 +34,16 @@
 
 
 		<StackPanel Grid.Row= "2" Grid.Column="1" Orientation= "Horizontal" HorizontalAlignment="Right" >
-			<Button Margin= "5 0 0 0" Content= "Save Item" Command= "{Binding AddItem}" />
+			<Button Margin= "5 0 0 0" Content= "Save Item" Command= "{Binding SaveItem}" />
 		</StackPanel >
 
 		<Grid Grid.Column="1" Grid.Row="1" Margin="5 0 0 0">
 			<Border Classes="Card">
-				<StackPanel ToolTip.Tip="If you would like a reminder of when to check the item next.">
+				<StackPanel >
 					<TextBlock Grid.Row="2" Margin="0 0 0 5" FontSize="20" Text="Next Service Date" />
 					
-					<CalendarDatePicker  SelectedDate="{Binding EditDueDates}"></CalendarDatePicker>
-
+					<CalendarDatePicker ToolTip.Tip="If you would like a reminder of when to check the item next." SelectedDate="{Binding EditDueDates}"></CalendarDatePicker>
+					<CheckBox Content="Completed?" IsChecked="{Binding IsDone}" Margin="0 5 0 0"/>
 				</StackPanel>
 
 			</Border>

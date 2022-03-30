@@ -111,6 +111,7 @@ namespace HomeCheckList.ViewModels
             
             //MainWindowViewModel viewModel = new MainWindowViewModel(dbHelper, navigationStore);
             AddItem = new NavigateCommand<AddItemViewModel>(navigationStore, () => new AddItemViewModel(this,_dbHelper, navigationStore,_selectedRoom));
+            
             AddRoom = new NavigateCommand<AddRoomViewModel>(navigationStore, () => new AddRoomViewModel(this,_dbHelper,navigationStore));
             GetRoomItems = new NavigateCommand<RoomItemsViewModel>(navigationStore, () => new RoomItemsViewModel(this,_dbHelper,navigationStore));
             //GoAddItem = ReactiveCommand.CreateFromObservable(

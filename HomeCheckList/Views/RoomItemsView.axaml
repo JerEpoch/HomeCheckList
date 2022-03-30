@@ -44,7 +44,7 @@
 					<ColumnDefinition Width="auto" />
 				</Grid.ColumnDefinitions>
 				<Button Grid.Column="0" Margin="5" HorizontalAlignment="Right" Content="Edit Item" MinWidth="100" MaxWidth="100" IsVisible="{Binding Items.Count}" Command="{Binding GoEditItem}" IsEnabled="{Binding CanEdit}" />
-				<Button Grid.Column="1" Margin="5" HorizontalAlignment="Right" Content="Delete Item" MinWidth="100" MaxWidth="100" IsVisible="{Binding Items.Count}" />
+				<Button Grid.Column="1" Margin="5" HorizontalAlignment="Right" Content="Delete Item" MinWidth="100" MaxWidth="100" IsVisible="{Binding Items.Count}" Command="{Binding DeleteRoomItem}" IsEnabled="{Binding CanEdit}" />
 
 			</Grid>
 		</Grid>

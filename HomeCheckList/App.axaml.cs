@@ -20,6 +20,7 @@ namespace HomeCheckList
         private const string CONNECTION_STRING = "Data Source=checklist.db";
         private readonly HomeCheckListDbContextFactory _homeCheckListDbContextFactory;
         private readonly NavigationStore _navigationStore;
+        private readonly INavigationServices _navigationServices;
         private readonly DbHelper _dbHelper;
 
         public override void Initialize()

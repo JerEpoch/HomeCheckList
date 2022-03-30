@@ -11,5 +11,7 @@ namespace HomeCheckList.Services
     {
         Task<IEnumerable<RoomItems>> GetAllRoomItems();
         Task<IEnumerable<RoomItems>> GetItemsByRoom(int roomId);
+        
+        Task<RoomItems> GetRoomItemById(int roomId);
     }
 }
