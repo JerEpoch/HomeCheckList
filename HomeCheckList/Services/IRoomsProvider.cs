@@ -10,6 +10,7 @@ namespace HomeCheckList.Services
     public interface IRoomsProvider
     {
         Task<IEnumerable<Room>> GetAllRooms();
+        Task<Room> GetRoomById(int id);
         
     }
 }

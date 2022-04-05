@@ -1,6 +1,8 @@
 ﻿using HomeCheckList.Models;
 using HomeCheckList.Stores;
 using HomeCheckList.ViewModels;
+using MessageBox.Avalonia.DTO;
+using MessageBox.Avalonia.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,23 +26,38 @@ namespace HomeCheckList.Commands
         }
         public override async Task ExecuteAsync(object paremter)
         {
-            var roomItem = await _dbHelper.GetRoomItemById(_itemViewModel.SelectedItem.itemId);
-            if (roomItem != null)
-            {
-                await _dbHelper.DeleteRoomItem(roomItem);
+            var messageBoxConfirm = MessageBox.Avalonia.MessageBoxManager.GetMessageBoxStandardWindow(
+              new MessageBoxStandardParams
+              {
+                  ButtonDefinitions = ButtonEnum.OkCancel,
+                  CanResize = true,
+                  ContentTitle = "Confirm",
+                  ContentMessage = "Are you sure you wish to delete the item?"
+              });
 
-                var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
-                   .GetMessageBoxStandardWindow("Success", "Your item was deleted.");
-                await messageBoxStandard.Show();
+            var result = await messageBoxConfirm.Show();
 
-                _navigationStore.CurrentViewModel = new RoomItemsViewModel(_mainWindowViewModel, _dbHelper, _navigationStore);
-            }
-            else
+            if (result != ButtonResult.Cancel)
             {
-                var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
-                   .GetMessageBoxStandardWindow("Error", "Your item was unable to be deleted.");
-                await messageBoxStandard.Show();
+                var roomItem = await _dbHelper.GetRoomItemById(_itemViewModel.SelectedItem.itemId);
+                if (roomItem != null)
+                {
+                    await _dbHelper.DeleteRoomItem(roomItem);
+
+                    var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                       .GetMessageBoxStandardWindow("Success", "Your item was deleted.");
+                    await messageBoxStandard.Show();
+
+                    _navigationStore.CurrentViewModel = new RoomItemsViewModel(_mainWindowViewModel, _dbHelper, _navigationStore);
+                }
+                else
+                {
+                    var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                       .GetMessageBoxStandardWindow("Error", "Your item was unable to be deleted.");
+                    await messageBoxStandard.Show();
+                }
             }
+           
         }
     }
 }

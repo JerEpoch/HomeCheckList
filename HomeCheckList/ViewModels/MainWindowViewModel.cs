@@ -86,6 +86,7 @@ namespace HomeCheckList.ViewModels
         public ICommand LoadRooms { get; }
         
         public ICommand GetRoomItems { get; }
+        public ICommand ManageRoom { get; }
         public MainWindowViewModel(DbHelper dbHelper, NavigationStore navigationStore)
         {
             
@@ -111,7 +112,7 @@ namespace HomeCheckList.ViewModels
             
             //MainWindowViewModel viewModel = new MainWindowViewModel(dbHelper, navigationStore);
             AddItem = new NavigateCommand<AddItemViewModel>(navigationStore, () => new AddItemViewModel(this,_dbHelper, navigationStore,_selectedRoom));
-            
+            ManageRoom = new NavigateCommand<ManageRoomViewModel>(navigationStore, () => new ManageRoomViewModel(this, dbHelper));
             AddRoom = new NavigateCommand<AddRoomViewModel>(navigationStore, () => new AddRoomViewModel(this,_dbHelper,navigationStore));
             GetRoomItems = new NavigateCommand<RoomItemsViewModel>(navigationStore, () => new RoomItemsViewModel(this,_dbHelper,navigationStore));
             //GoAddItem = ReactiveCommand.CreateFromObservable(
@@ -125,6 +126,10 @@ namespace HomeCheckList.ViewModels
         public MainWindowViewModel()
         { }
 
+        public void UpdateAllRooms()
+        {
+            this.LoadRooms.Execute(null);
+        }
         private void OnCurrentViewModelChanged()
         {
             OnPropertyChanged(nameof(CurrentViewModel));

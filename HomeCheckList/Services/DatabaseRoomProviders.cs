@@ -27,5 +27,15 @@ namespace HomeCheckList.Services
                 return rooms;
             }
         }
+
+        public async Task<Room> GetRoomById(int id)
+        {
+            using (CheckListContext context = _contextFactory.CreateDbContext())
+            {
+                Room room = await context.Rooms.SingleOrDefaultAsync(r => r.Id == id);
+
+                return room;
+            }
+        }
     }
 }

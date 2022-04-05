@@ -1,6 +1,8 @@
 ﻿using HomeCheckList.Models;
 using HomeCheckList.Stores;
 using HomeCheckList.ViewModels;
+using MessageBox.Avalonia.DTO;
+using MessageBox.Avalonia.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +28,8 @@ namespace HomeCheckList.Commands
 
         public override async Task ExecuteAsync(object paremter)
         {
+          
+
             var roomItemEdit = await _dbHelper.GetRoomItemById(_editRoomItemViewModel.ItemId);
 
             if (roomItemEdit != null)

@@ -13,12 +13,12 @@ namespace HomeCheckList.ViewModels
 {
     public class EditRoomItemViewModel : ViewModelBase
     {
-        private DbHelper _dbHelper;
-        private NavigationStore _navigationStore;
+        //private DbHelper _dbHelper;
+        //private NavigationStore _navigationStore;
         private ItemViewModel _itemViewModel;
         private MainWindowViewModel _mainWindowViewModel;
 
-        private string _editNote;
+        
         //private readonly ObservableCollection<ItemViewModel> _itemViewModel;
         //public IEnumerable<ItemViewModel> Items => _itemViewModel;
 
@@ -60,8 +60,8 @@ namespace HomeCheckList.ViewModels
         public ICommand SaveItem { get; }
         public EditRoomItemViewModel(DbHelper dbHelper, NavigationStore navigationStore, ItemViewModel itemViewModel, MainWindowViewModel mainWindowViewModel)
         {
-            _dbHelper = dbHelper;
-            _navigationStore = navigationStore;
+            //_dbHelper = dbHelper;
+            //_navigationStore = navigationStore;
             _mainWindowViewModel = mainWindowViewModel;
             _itemViewModel = itemViewModel;
 

@@ -19,6 +19,7 @@ namespace HomeCheckList.Commands
             _dbHelper = dbhelper;
         }
 
+      
         public override async Task ExecuteAsync(object parameter)
         {
             try
@@ -31,7 +32,7 @@ namespace HomeCheckList.Commands
                 var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
                     .GetMessageBoxStandardWindow("Error", "There was a problem getting rooms.");
 
-                messageBoxStandard.Show();
+                await messageBoxStandard.Show();
             }
         }
     }

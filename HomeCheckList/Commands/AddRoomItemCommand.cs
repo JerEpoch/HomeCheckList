@@ -21,10 +21,10 @@ namespace HomeCheckList.Commands
             _dbHelper = dbHelper;
             _addItemViewModel = addItemViewModel;
             
-            _addItemViewModel.PropertyChanged += _addItemViewModel_PropertyChanged;
+            _addItemViewModel.PropertyChanged += addItemViewModel_PropertyChanged;
         }
 
-        private void _addItemViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void addItemViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if(e.PropertyName == nameof(AddItemViewModel.InputName))
             {
@@ -38,7 +38,7 @@ namespace HomeCheckList.Commands
         }
         public override async Task ExecuteAsync(object paremter)
         {
-            RoomItems roomItem = new RoomItems();
+            RoomItems roomItem = new();
 
             if (_mainWindowViewModel.SelectedRoom == null)
             {
@@ -84,7 +84,9 @@ namespace HomeCheckList.Commands
             }
             catch (Exception )
             {
-
+                var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                    .GetMessageBoxStandardWindow("Error", "Your item was unable to be created. Please try again.");
+                await messageBoxStandard.Show();
             }
         }
     }

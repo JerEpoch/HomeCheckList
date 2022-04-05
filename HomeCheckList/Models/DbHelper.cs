@@ -64,5 +64,20 @@ namespace HomeCheckList.Models
         {
             await _itemCreator.DeleteRoomItem(roomItem);
         }
+
+        public async Task<Room> GetRoomById(int roomId)
+        {
+            return await _roomsProvider.GetRoomById(roomId);
+        }
+
+        public async Task UpdateRoom(Room room)
+        {
+            await _roomCreator.UpdateRoom(room);
+        }
+
+        public async Task DeleteRoom(Room room)
+        {
+            await _roomCreator.DeleteRoom(room);
+        }
     }
 }

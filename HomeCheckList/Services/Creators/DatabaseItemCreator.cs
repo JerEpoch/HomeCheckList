@@ -45,7 +45,9 @@ namespace HomeCheckList.Services.Creators
         {
             using CheckListContext context = _contextFactory.CreateDbContext();
             context.Remove(roomItem);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
+
+       
     }
 }

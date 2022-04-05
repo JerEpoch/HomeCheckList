@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="HomeCheckList.Views.ManageRoomView">
+
+	<Border Classes="Card">
+		<Grid HorizontalAlignment="Center" Margin="5">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="auto" />
+				<RowDefinition Height="auto" />
+				<RowDefinition Height="auto" />
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto" />
+				<ColumnDefinition Width="auto" />
+			</Grid.ColumnDefinitions>
+
+			<ComboBox x:Name="RoomsList"  SelectedItem="{Binding SelectedManageRoom}"  Items="{Binding ManageRooms}"  PlaceholderText="Select a room" ToolTip.Tip="Select a room to add an item to it.">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding Name}" />
+					</DataTemplate>
+				</ComboBox.ItemTemplate>
+			</ComboBox>
+			
+			<TextBox Grid.Row="1" Watermark="Change room name" ToolTip.Tip="Enter the room's new name." AcceptsReturn="False" Text="{Binding ManageRoomName}"/>
+		
+			<Grid Grid.Row="2">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto" />
+					<ColumnDefinition Width="auto" />
+				</Grid.ColumnDefinitions>
+				<Button Margin="5" Grid.Column="0" Content="Save Changes" Command="{Binding SaveChanges}" />
+				<Button Margin="5" Grid.Column="1" Content="Delete Room" Command="{Binding DeleteRoom}" />
+			</Grid>
+		
+			
+		</Grid>
+	</Border>
+</UserControl>
