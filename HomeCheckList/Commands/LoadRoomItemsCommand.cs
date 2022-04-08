@@ -29,7 +29,9 @@ namespace HomeCheckList.Commands
             }
             catch (Exception)
             {
-
+                var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                    .GetMessageBoxStandardWindow("Error", "Unable to retrieve the room's items.");
+                await messageBoxStandard.Show();
             }
         }
     }

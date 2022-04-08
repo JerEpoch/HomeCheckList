@@ -41,10 +41,24 @@ namespace HomeCheckList.Commands
 
                 if (roomToDelete != null)
                 {
-                    await _dbHelper.DeleteRoom(roomToDelete);
+                    try
+                    {
+                        await _dbHelper.DeleteRoom(roomToDelete);
 
-                    _viewModel.UpdateRoomList();
-                    _viewModel.ManageRoomName = "";
+                        _viewModel.UpdateRoomList();
+                        _viewModel.ManageRoomName = "";
+
+                        var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                            .GetMessageBoxStandardWindow("Success", "Your room was deleted.");
+                        await messageBoxStandard.Show();
+                    }
+                    catch (Exception)
+                    {
+                        var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
+                            .GetMessageBoxStandardWindow("Error", "Your room was unable to be deleted.");
+                        await messageBoxStandard.Show();
+                    }
+                    
                 }
             }
 

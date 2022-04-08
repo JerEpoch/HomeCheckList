@@ -50,13 +50,13 @@ namespace HomeCheckList
 
 
             // DbContextOptions options = new DbContextOptionsBuilder().UseSqlite(CONNECTION_STRING).Options;
-            
-            
 
-            //using (CheckListContext dbContext = _homeCheckListDbContextFactory.CreateDbContext())
-            //{
-            //    dbContext.Database.Migrate();
-            //}
+
+
+            using (CheckListContext dbContext = _homeCheckListDbContextFactory.CreateDbContext())
+            {
+                dbContext.Database.Migrate();
+            }
 
 
 

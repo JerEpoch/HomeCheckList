@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>EPOCH</Machine>
+    <WindowsUser>jerso</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>014b5ed9-74ce-4d19-8647-d6e4a94c4239</PackageIdentityName>
+    <PackageIdentityPublisher>CN=jerso</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\api-test\projects\HomeCheckList\WapProjTemplate1\obj\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath></WindowsSdkPath>
+    <LayoutDir>E:\api-test\projects\HomeCheckList\WapProjTemplate1\bin\AnyCPU\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\bin\AnyCPU\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\WapProjTemplate1\bin\AnyCPU\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Animation.dll">
+      <PackagePath>HomeCheckList\Avalonia.Animation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Base.dll">
+      <PackagePath>HomeCheckList\Avalonia.Base.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Controls.dll">
+      <PackagePath>HomeCheckList\Avalonia.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.DesignerSupport.dll">
+      <PackagePath>HomeCheckList\Avalonia.DesignerSupport.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.DesktopRuntime.dll">
+      <PackagePath>HomeCheckList\Avalonia.DesktopRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Dialogs.dll">
+      <PackagePath>HomeCheckList\Avalonia.Dialogs.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Input.dll">
+      <PackagePath>HomeCheckList\Avalonia.Input.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Interactivity.dll">
+      <PackagePath>HomeCheckList\Avalonia.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Layout.dll">
+      <PackagePath>HomeCheckList\Avalonia.Layout.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Markup.Xaml.dll">
+      <PackagePath>HomeCheckList\Avalonia.Markup.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Markup.dll">
+      <PackagePath>HomeCheckList\Avalonia.Markup.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.MicroCom.dll">
+      <PackagePath>HomeCheckList\Avalonia.MicroCom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.OpenGL.dll">
+      <PackagePath>HomeCheckList\Avalonia.OpenGL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Styling.dll">
+      <PackagePath>HomeCheckList\Avalonia.Styling.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Themes.Default.dll">
+      <PackagePath>HomeCheckList\Avalonia.Themes.Default.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Themes.Fluent.dll">
+      <PackagePath>HomeCheckList\Avalonia.Themes.Fluent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.Visuals.dll">
+      <PackagePath>HomeCheckList\Avalonia.Visuals.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia\0.10.13\lib\netcoreapp2.0\Avalonia.dll">
+      <PackagePath>HomeCheckList\Avalonia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.avaloniaedit\0.10.0\lib\netstandard2.0\AvaloniaEdit.dll">
+      <PackagePath>HomeCheckList\AvaloniaEdit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.controls.datagrid\0.10.13\lib\netstandard2.0\Avalonia.Controls.DataGrid.dll">
+      <PackagePath>HomeCheckList\Avalonia.Controls.DataGrid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.desktop\0.10.13\lib\netstandard2.0\Avalonia.Desktop.dll">
+      <PackagePath>HomeCheckList\Avalonia.Desktop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.freedesktop\0.10.13\lib\netstandard2.0\Avalonia.FreeDesktop.dll">
+      <PackagePath>HomeCheckList\Avalonia.FreeDesktop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.native\0.10.13\lib\netstandard2.0\Avalonia.Native.dll">
+      <PackagePath>HomeCheckList\Avalonia.Native.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.reactiveui\0.10.13\lib\netstandard2.0\Avalonia.ReactiveUI.dll">
+      <PackagePath>HomeCheckList\Avalonia.ReactiveUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.remote.protocol\0.10.13\lib\netstandard2.0\Avalonia.Remote.Protocol.dll">
+      <PackagePath>HomeCheckList\Avalonia.Remote.Protocol.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.skia\0.10.13\lib\netstandard2.0\Avalonia.Skia.dll">
+      <PackagePath>HomeCheckList\Avalonia.Skia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.win32\0.10.13\lib\netstandard2.0\Avalonia.Win32.dll">
+      <PackagePath>HomeCheckList\Avalonia.Win32.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.x11\0.10.13\lib\netstandard2.0\Avalonia.X11.dll">
+      <PackagePath>HomeCheckList\Avalonia.X11.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\citrus.avalonia\1.6.1\lib\netstandard2.0\Citrus.Avalonia.dll">
+      <PackagePath>HomeCheckList\Citrus.Avalonia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\dynamicdata\7.1.1\lib\net5.0\DynamicData.dll">
+      <PackagePath>HomeCheckList\DynamicData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp\2.8.2-preview.178\lib\netstandard2.0\HarfBuzzSharp.dll">
+      <PackagePath>HomeCheckList\HarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\humanizer.core\2.8.26\lib\netstandard2.0\Humanizer.dll">
+      <PackagePath>HomeCheckList\Humanizer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll">
+      <PackagePath>HomeCheckList\JetBrains.Annotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\markdown.avalonia.syntaxhigh\0.10.10\lib\netcoreapp2.0\Markdown.Avalonia.SyntaxHigh.dll">
+      <PackagePath>HomeCheckList\Markdown.Avalonia.SyntaxHigh.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\markdown.avalonia.tight\0.10.10\lib\netcoreapp2.0\ColorTextBlock.Avalonia.dll">
+      <PackagePath>HomeCheckList\ColorTextBlock.Avalonia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\markdown.avalonia.tight\0.10.10\lib\netcoreapp2.0\Markdown.Avalonia.dll">
+      <PackagePath>HomeCheckList\Markdown.Avalonia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\messagebox.avalonia\2.0.0\lib\netstandard2.0\MessageBox.Avalonia.dll">
+      <PackagePath>HomeCheckList\MessageBox.Avalonia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.data.sqlite.core\5.0.14\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>HomeCheckList\Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.dotnet.platformabstractions\3.1.6\lib\netstandard2.0\Microsoft.DotNet.PlatformAbstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.DotNet.PlatformAbstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.entityframeworkcore\5.0.14\lib\netstandard2.1\Microsoft.EntityFrameworkCore.dll">
+      <PackagePath>HomeCheckList\Microsoft.EntityFrameworkCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.entityframeworkcore.abstractions\5.0.14\lib\netstandard2.1\Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.entityframeworkcore.design\5.0.14\lib\netstandard2.1\Microsoft.EntityFrameworkCore.Design.dll">
+      <PackagePath>HomeCheckList\Microsoft.EntityFrameworkCore.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.entityframeworkcore.relational\5.0.14\lib\netstandard2.1\Microsoft.EntityFrameworkCore.Relational.dll">
+      <PackagePath>HomeCheckList\Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\5.0.14\lib\netstandard2.1\Microsoft.EntityFrameworkCore.Sqlite.dll">
+      <PackagePath>HomeCheckList\Microsoft.EntityFrameworkCore.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.caching.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.caching.memory\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Caching.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.configuration.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.dependencyinjection\5.0.2\lib\net5.0\Microsoft.Extensions.DependencyInjection.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.DependencyInjection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.dependencymodel\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.DependencyModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.logging\5.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.logging.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.options\5.0.0\lib\net5.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Options.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.extensions.primitives\5.0.0\lib\netcoreapp3.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>HomeCheckList\Microsoft.Extensions.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.win32.systemevents\4.5.0\lib\netstandard2.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>HomeCheckList\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\reactiveui\13.2.10\lib\net5.0\ReactiveUI.dll">
+      <PackagePath>HomeCheckList\ReactiveUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp\2.88.0-preview.178\lib\netstandard2.0\SkiaSharp.dll">
+      <PackagePath>HomeCheckList\SkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\splat\10.0.1\lib\net5.0\Splat.dll">
+      <PackagePath>HomeCheckList\Splat.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>HomeCheckList\SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll">
+      <PackagePath>HomeCheckList\SQLitePCLRaw.nativelibrary.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>HomeCheckList\SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.provider.dynamic_cdecl\2.0.4\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll">
+      <PackagePath>HomeCheckList\SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\system.diagnostics.diagnosticsource\5.0.1\lib\net5.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>HomeCheckList\System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\system.drawing.common\4.5.0\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>HomeCheckList\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\system.reactive\5.0.0\lib\net5.0\System.Reactive.dll">
+      <PackagePath>HomeCheckList\System.Reactive.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\tmds.dbus\0.9.0\lib\netstandard2.0\Tmds.DBus.dll">
+      <PackagePath>HomeCheckList\Tmds.DBus.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.angle.windows.natives\2.1.0.2020091801\runtimes\win-arm64\native\av_libglesv2.dll">
+      <PackagePath>HomeCheckList\runtimes\win-arm64\native\av_libglesv2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.angle.windows.natives\2.1.0.2020091801\runtimes\win7-x64\native\av_libglesv2.dll">
+      <PackagePath>HomeCheckList\runtimes\win7-x64\native\av_libglesv2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.angle.windows.natives\2.1.0.2020091801\runtimes\win7-x86\native\av_libglesv2.dll">
+      <PackagePath>HomeCheckList\runtimes\win7-x86\native\av_libglesv2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\avalonia.native\0.10.13\runtimes\osx\native\libAvaloniaNative.dylib">
+      <PackagePath>HomeCheckList\runtimes\osx\native\libAvaloniaNative.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.linux\2.8.2-preview.178\runtimes\linux-arm\native\libHarfBuzzSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm\native\libHarfBuzzSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.linux\2.8.2-preview.178\runtimes\linux-arm64\native\libHarfBuzzSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm64\native\libHarfBuzzSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.linux\2.8.2-preview.178\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.linux\2.8.2-preview.178\runtimes\linux-x64\native\libHarfBuzzSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-x64\native\libHarfBuzzSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.macos\2.8.2-preview.178\runtimes\osx\native\libHarfBuzzSharp.dylib">
+      <PackagePath>HomeCheckList\runtimes\osx\native\libHarfBuzzSharp.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.win32\2.8.2-preview.178\runtimes\win-arm64\native\libHarfBuzzSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-arm64\native\libHarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.win32\2.8.2-preview.178\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x64\native\libHarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\harfbuzzsharp.nativeassets.win32\2.8.2-preview.178\runtimes\win-x86\native\libHarfBuzzSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x86\native\libHarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\microsoft.win32.systemevents\4.5.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>HomeCheckList\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.linux\2.88.0-preview.178\runtimes\linux-arm\native\libSkiaSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm\native\libSkiaSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.linux\2.88.0-preview.178\runtimes\linux-arm64\native\libSkiaSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm64\native\libSkiaSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.linux\2.88.0-preview.178\runtimes\linux-musl-x64\native\libSkiaSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-musl-x64\native\libSkiaSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.linux\2.88.0-preview.178\runtimes\linux-x64\native\libSkiaSharp.so">
+      <PackagePath>HomeCheckList\runtimes\linux-x64\native\libSkiaSharp.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.macos\2.88.0-preview.178\runtimes\osx\native\libSkiaSharp.dylib">
+      <PackagePath>HomeCheckList\runtimes\osx\native\libSkiaSharp.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.win32\2.88.0-preview.178\runtimes\win-arm64\native\libSkiaSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-arm64\native\libSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.win32\2.88.0-preview.178\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x64\native\libSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\skiasharp.nativeassets.win32\2.88.0-preview.178\runtimes\win-x86\native\libSkiaSharp.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x86\native\libSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\alpine-x64\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\alpine-x64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm64\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-arm64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-armel\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-armel\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-mips64\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-mips64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-musl-x64\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-musl-x64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x64\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-x64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x86\native\libe_sqlite3.so">
+      <PackagePath>HomeCheckList\runtimes\linux-x86\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\osx-x64\native\libe_sqlite3.dylib">
+      <PackagePath>HomeCheckList\runtimes\osx-x64\native\libe_sqlite3.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm\native\e_sqlite3.dll">
+      <PackagePath>HomeCheckList\runtimes\win-arm\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm64\native\e_sqlite3.dll">
+      <PackagePath>HomeCheckList\runtimes\win-arm64\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x64\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x86\native\e_sqlite3.dll">
+      <PackagePath>HomeCheckList\runtimes\win-x86\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\system.drawing.common\4.5.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll">
+      <PackagePath>HomeCheckList\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jerso\.nuget\packages\system.drawing.common\4.5.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll">
+      <PackagePath>HomeCheckList\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\HomeCheckList\bin\Release\net5.0\HomeCheckList.deps.json">
+      <PackagePath>HomeCheckList\HomeCheckList.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\HomeCheckList\bin\Release\net5.0\HomeCheckList.runtimeconfig.dev.json">
+      <PackagePath>HomeCheckList\HomeCheckList.runtimeconfig.dev.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\HomeCheckList\obj\Release\net5.0\apphost.exe">
+      <PackagePath>HomeCheckList\HomeCheckList.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\HomeCheckList\bin\Release\net5.0\HomeCheckList.runtimeconfig.json">
+      <PackagePath>HomeCheckList\HomeCheckList.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\api-test\projects\HomeCheckList\HomeCheckList\bin\Release\net5.0\HomeCheckList.dll">
+      <PackagePath>HomeCheckList\HomeCheckList.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

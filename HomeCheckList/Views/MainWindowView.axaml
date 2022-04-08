@@ -10,6 +10,7 @@
 		Height="600"
 		MinWidth="1050"
 		MinHeight="600"
+		WindowStartupLocation="CenterScreen"
         x:Class="HomeCheckList.Views.MainWindowView"
         Title="Home CheckList"
 		>
@@ -41,10 +42,10 @@
 						</ComboBox.ItemTemplate>
 					</ComboBox>
 				</Panel>
-				<Button HorizontalAlignment="Center"  Command="{Binding GetRoomItems}" CommandParameter="{Binding ElementName=RoomList, Path=SelectedItem}" Content="Show room items" IsEnabled="{Binding CanAddRoomItem}" />
+				<Button HorizontalAlignment="Center"  Command="{Binding GetRoomItems}" CommandParameter="{Binding ElementName=RoomList, Path=SelectedItem}" Content="Show room items" IsEnabled="{Binding CanAddRoomItem}"  />
 				
 				<Panel>
-					<Button Content="Add An Item" Command="{Binding AddItem}" IsEnabled="{Binding CanAddRoomItem}" />
+					<Button Content="Add An Item" Command="{Binding AddItem}" IsEnabled="{Binding CanAddRoomItem}"  />
 				</Panel>
 				
 				<Panel>
