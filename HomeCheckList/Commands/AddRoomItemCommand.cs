@@ -58,7 +58,7 @@ namespace HomeCheckList.Commands
                     //RoomItems roomItem = new(
                     //     _addItemViewModel.InputName,
                     //     _addItemViewModel.InputNote,
-                    //     _addItemViewModel.DueDates,
+                    //     _addItemViewModel.DueDates,;
                     //     _mainWindowViewModel.SelectedRoom.Id
 
                     // );
@@ -80,6 +80,10 @@ namespace HomeCheckList.Commands
                 var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
                     .GetMessageBoxStandardWindow("Sucess", "Your item was created.");
                 await messageBoxStandard.Show();
+
+                _addItemViewModel.InputName = "";
+                _addItemViewModel.InputNote = "";
+                _addItemViewModel.IncludeReminder = false;
 
             }
             catch (Exception )

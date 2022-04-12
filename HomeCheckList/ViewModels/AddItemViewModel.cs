@@ -38,11 +38,15 @@ namespace HomeCheckList.ViewModels
         public string InputNote
         {
             get => _itemNote;
-            set => this.RaiseAndSetIfChanged(ref _itemNote, value);
+            set
+            {
+                _itemNote = value;
+                OnPropertyChanged(nameof(InputNote));
+            }
         }
 
         private DateTime _dueDate = DateTime.Today;
-        
+       
         public DateTime DueDates
         {
             get => _dueDate;

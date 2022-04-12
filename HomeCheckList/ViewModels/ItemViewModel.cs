@@ -43,8 +43,8 @@ namespace HomeCheckList.ViewModels
                 OnPropertyChanged(nameof(IsDone));
             }
         }
-       
-       // public string? DueDate => _roomItems.DueDate?.ToShortDateString();
+
+         public string? DueDateFormatted => _roomItems.DueDate?.ToShortDateString();
         public DateTime? DueDate
         {
             get => _roomItems.DueDate;
@@ -55,6 +55,8 @@ namespace HomeCheckList.ViewModels
                 OnPropertyChanged(nameof(DueDate));
             }
         }
+
+
 
         public string LastEdited => _roomItems.CreatedAt.ToShortDateString();
         public ItemViewModel(RoomItems roomItems)

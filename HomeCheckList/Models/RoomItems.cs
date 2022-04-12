@@ -36,5 +36,15 @@ namespace HomeCheckList.Models
             CreatedAt = DateTime.Now;
             RoomId = rId;
         }
+
+        public string FormattedDate()
+        {
+            if (DueDate.HasValue)
+            {
+                return DueDate.Value.ToShortDateString();
+            }
+
+            return null;
+        }
     }
 }

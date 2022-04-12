@@ -23,7 +23,15 @@ namespace HomeCheckList.ViewModels
         //public IEnumerable<ItemViewModel> Items => _itemViewModel;
 
         public int ItemId => _itemViewModel.itemId;
-        public string EditName => _itemViewModel.Name;
+        public string EditName
+        {
+            get => _itemViewModel.Name;
+            set
+            {
+                _itemViewModel.Name = value;
+                OnPropertyChanged(nameof(EditName));
+            }
+        }
        // public string EditNote => _itemViewModel.Note;
         public string EditNote
         {

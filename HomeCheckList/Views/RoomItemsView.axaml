@@ -34,7 +34,7 @@
 					<DataGridTextColumn  Header="Item"  Binding="{Binding Name}"/>
 					<DataGridTextColumn Header="Notes"  MaxWidth="150" Binding="{Binding Note}"/>
 					<DataGridTextColumn Header="Last Edited On"  Binding="{Binding LastEdited}"/>
-					<DataGridTextColumn Header="Due Date" Binding="{Binding DueDate, TargetNullValue=' '}" />
+					<DataGridTextColumn Header="Due Date" Binding="{Binding DueDateFormatted, TargetNullValue=' '}" />
 					<DataGridCheckBoxColumn Header="Task Completed?" Binding="{Binding IsDone}" />
 				</DataGrid.Columns>
 			</DataGrid>
