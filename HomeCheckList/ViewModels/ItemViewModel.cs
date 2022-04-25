@@ -24,7 +24,7 @@ namespace HomeCheckList.ViewModels
             }
         }
        // public string Note => _roomItems.Note;
-        public string Note
+        public string? Note
         {
             get => _roomItems.Note;
             set

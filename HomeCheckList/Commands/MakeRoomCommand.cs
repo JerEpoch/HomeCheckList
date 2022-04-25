@@ -44,6 +44,7 @@ namespace HomeCheckList.Commands
                     .GetMessageBoxStandardWindow("Sucess", "New room created.");
 
                 await messageBoxStandard.Show();
+                _addRoomViewModel.InputRoomName = "";
                 _loadRoomsCommand.Execute(null);
                 //rooms = await _dbHelper.GetAll();
                 //_mainWindowViewModel.LoadRoomItems(rooms);

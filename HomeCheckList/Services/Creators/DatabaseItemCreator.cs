@@ -25,6 +25,7 @@ namespace HomeCheckList.Services.Creators
                 ItemName = roomItem.ItemName,
                 Note = roomItem.Note,
                 RoomId = roomItem.RoomId,
+                IsCompleted = false,
                 CreatedAt = DateTime.Now,
                 DueDate = roomItem.DueDate
             };

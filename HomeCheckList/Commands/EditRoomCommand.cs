@@ -30,6 +30,7 @@ namespace HomeCheckList.Commands
                     await _dbHelper.UpdateRoom(roomToEdit);
 
                     _viewModel.UpdateRoomList();
+                    _viewModel.ManageRoomName = "";
 
                     var messageBoxStandard = MessageBox.Avalonia.MessageBoxManager
                         .GetMessageBoxStandardWindow("Success", "Your changes were saved.");

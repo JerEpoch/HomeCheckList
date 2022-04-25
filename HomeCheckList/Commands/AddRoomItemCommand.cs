@@ -54,14 +54,7 @@ namespace HomeCheckList.Commands
                     roomItem.Note = _addItemViewModel.InputNote;
                     roomItem.DueDate = _addItemViewModel.DueDates;
                     roomItem.RoomId = _mainWindowViewModel.SelectedRoom.Id;
-                    
-                    //RoomItems roomItem = new(
-                    //     _addItemViewModel.InputName,
-                    //     _addItemViewModel.InputNote,
-                    //     _addItemViewModel.DueDates,;
-                    //     _mainWindowViewModel.SelectedRoom.Id
 
-                    // );
                 }
                 else
                 {

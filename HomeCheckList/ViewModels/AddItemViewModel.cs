@@ -47,6 +47,7 @@ namespace HomeCheckList.ViewModels
 
         private DateTime _dueDate = DateTime.Today;
        
+        
         public DateTime DueDates
         {
             get => _dueDate;
